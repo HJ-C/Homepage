@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"> <!-- 문자 인코딩 방식이 UTF-8이다-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백석대학교</title>
+
+
+    <link rel="icon" href="./백석대로고.png"> <!--타이틀 옆 아이콘-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"><!--브라우저에서 사용되는 스타일이 초기화 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- 구글 폰트 선언, 브라우저마다 폰트가 다르기때문-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet"> <!-- 구글폰트 선언, css보다 먼저 선언-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--https://material.io/ 에서 아이콘 선택, css보다 위에 선언-->
+    <link rel="stylesheet" href="./css/main.css"><!--html에 css연동-->
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> <!--슬라이딩을 쓰기위해서 SWIPERJS 에서제공하는 외부 라이브러리 선언 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+
+    <script defer src="./js/youtube.js"></script> <!--유튜브js 연동-->
+    <script defer src="./js/main.js"></script> <!-- defer는 html이 준비되면 실행되도록 정의-->
+</head>
+
+
+<body>
+
+</body>
+  <!--HEADER-->
+  <header>
+    <div class="inner">
+
+      <a href="/" class = "logo"> <!--도메인,생략되어 /만 넣어도됨-->
+        <img src="BCUlogo.png" alt="백석대학교"> <!--이미지 로고-->
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="/signin">Sign In</a> <!--로그인 페이지-->
+          </li>
+          <li>
+            <a href="javascript:void(0)">G-mail</a> <!--링크 동작시 자바스크립으로 동작하지 않도록 기입-->
+          </li>
+          <li>
+            <a href="javascript:void(0)">종합정보시스템</a> <!--링크 동작시 자바스크립으로 동작하지 않도록 기입-->
+          </li>
+          <li>
+            <a href="javascript:void(0)">행정용메일</a> <!--링크 동작시 자바스크립으로 동작하지 않도록 기입-->
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text">
+          <div class="material-icons">search</div> <!--https://material.io에서 돋보기 모양 선택-->
+        </div>
+      </div>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">학교소개</div>
+          <div class="item__contents"> <!--언더바 2번 = HTML 클래스 속성 작명, 요소의 일부분을 표시-->
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>설립정신</h4>
+                  <ul>
+                    <li>설립정신</li>
+                    <li>신학사상</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>대학기구</h4>
+                  <ul>
+                    <li>학교조직</li>
+                    <li>본부조직(대학)</li>
+                    <li>본부조직(대학원)</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>대학현황</h4>
+                  <ul>
+                    <li>대학자체평가결과</li>
+                    <li>학칙/제규정</li>
+                    <li>등록금심의위원회</li>
+                    <li>대학평의원회</li>
+                    <li>정보공개</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>캠퍼스안내</h4>
+                  <ul>
+                    <li>찾아오시는 길</li>
+                    <li>둘레길</li>
+                    <li>캠퍼스투어</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>백석학원의 교훈</h4>
+                <p>"진리가 너희를 자유케 하리라"(요 8:32)</p>
+                <h4>백석인의 생활지침</h4>
+                <p>믿고, 믿게하고, 진리 안에서 하나 되어, 자유한다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">입시안내</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>모집요강</h4>
+                  <ul>
+                    <li>수시 모집요강</li>
+                    <li>정시 모집요강</li>
+                    <li>편입학 모집요강</li>
+                    <li>재외국민과 외국인 모집요강</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>입시 Q&A</h4>
+                  <ul>
+                    <li>입시관련 묻고 답하기</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>대학원 입학</h4>
+                  <ul>
+                    <li>대학원 입학</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4 class="new">찾아가는 입시박람회 신청 안내</h4>
+                <p>대전,세종,충남,충북지역 대학교 찾아가는 입시박람회 2021.5.1 ~ 7.31</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">대학/대학원</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>대학 안내</h4>
+                  <ul>
+                    <li>컴퓨터공학부</li>
+                    <li>스마트IT공학부</li>
+                    <li>경상학부</li>
+                    <li>관광학부</li>
+                    <li>사범학부</li>
+                    <li>간호학괴</li>
+                    <li>디자인영상학부</li>
+                    <li>혁신융합학부</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>대학원 안내</h4>
+                  <ul>
+                    <li>대학원 전체보기</li>
+                    <li>기독교전문대학원</li>
+                    <li>신학대학원</li>
+                    <li>교육대학원</li>
+                    <li>상담대학원</li>
+                    <li>보건복지대학원</li>
+                    <li>문화예술대학원</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>평생교육원(천안)</h4>
+                  <ul>
+                    <li>평생교육원(천안)</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>평생교육원(서울)</h4>
+                  <ul>
+                    <li>평생교육원(서울)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>컴퓨터공학부</h4>
+                <p>[컴퓨터공학부]2021년 학부 전공 소개 영상</p>
+                <h4 class="new">취업진로지원처</h4>
+                <p>2021학년도 1학기 진로취업 경진대회 참가 안내</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">학사종합안내</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>학사정보</h4>
+                  <ul>
+                    <li>공지사항</li>
+                    <li>학사일정</li>
+                    <li>주요학사제도</li>
+                    <li>강의자료실</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>교수전용</h4>
+                  <ul>
+                    <li>공지사항</li>
+                    <li>강의자료실</li>
+                    <li>행정양식</li>
+                    <li>제증명신청</li>
+                    <li>교수멘토링</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>채플과섬김</h4>
+                  <ul>
+                    <li>교목실소개</li>
+                    <li>채플과섬김안내</li>
+                    <li>자료실</li>
+                    <li>게시판</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>학자금대출</h4>
+                  <ul>
+                    <li>학자금대출정보</li>
+                    <li>학자금FAQ</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>병무 및 예비군 정보</h4>
+                  <ul>
+                    <li>병무업무</li>
+                    <li>예비군업무</li>
+                    <li>예비군FAQ</li>
+                    <li>예비군Q&A</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>취업진로지원처</h4>
+                  <ul>
+                    <li>증명서발급안내</li>
+                    <li>학생증발급안내</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>채플과섬김(대학예배)</h4>
+                <p>2021-1학기 채플과섬김(대학예배)은 비대면·온라인수업으로 진행됩니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">취업정보</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>대학일자리센터</h4>
+                  <ul>
+                    <li>대학일자리센터</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>채용정보</h4>
+                  <ul>
+                    <li>채용정보</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>아르바이트</h4>
+                  <ul>
+                    <li>아르바이트</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>취업성공체험수기</h4>
+                  <ul>
+                    <li>체험수기</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>재학생직무 체험프로그램</h4>
+                <p>서울청소년센터 학기중(2학기) 청소년지도사 실습생 모집 안내</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">백석광장</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>백석뉴스</h4>
+                  <ul>
+                    <li>백석 News</li>
+                    <li>백석 People</li>
+                    <li>백석 Photo</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>편의복지</h4>
+                  <ul>
+                    <li>통학버스안내</li>
+                    <li>Event in BaekSeok</li>
+                    <li>금주의 식단</li>
+                    <li>편의시설안내</li>
+                    <li>기숙사</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>게시판모음</h4>
+                  <ul>
+                    <li>전체 공지</li>
+                    <li>대학 공지</li>
+                    <li>장학 공지</li>
+                    <li>학사 공지</li>
+                    <li>예배 공지</li>
+                    <li>일반 공지</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>통합로그인 서비스</h4>
+                <p>백석대학교 재학생, 대학원생 등 내부 사용자는 백석대학교 메인 홈페이지 로그인과 종합정보시스템,사이버캠퍼스를 인증 절차없이 이용할 수 있습니다.</p>
+                <h4>방문객 홈페이지 이용안내</h4>
+                <p>카카오톡, 네이버, 구글계정으로 로그인 후 이용 가능합니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+    </div>
+  </header>   
+  
+  <!-- VISUAL -->
+  <section class="visual">
+    <div class="inner">
+
+      <div>
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+      </div>
+    </div>
+
+
+
+  </section>
+  <section class="notice">
+
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="inner__left">
+          <h2>공지사항</h2>
+          <div class="swiper-container"> <!--swiper를 쓰기위해선 필수적으로 wrapper 와 slide가 존재해야함-->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">21-1학기 분납4차 등록금 납부 안내</a> <!--내부 페이지는 없으니 void(0)값으로 나타냄-->
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">[창업지원단] 2021년도 창업 아이디어 경진대회</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">백석학원과 재학생을 위한 중보기도</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">2021-2학기 전공변경 신청안내</a>
+              </div>
+            </div>
+          </div> <!--슬라이드 클래스-->
+          <a href="javascript:void(0)" class="notice-line__more">
+            <div class="material-icons">add_circle</div> <!--material-icons에서 명시되어 있는 아이콘임-->
+          </a>
+        </div>
+        <div class="inner__right">
+          <h2>다운로드</h2>
+          <div class="down">
+            <div class="material-icons">upload</d1iv>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 지도 맵 api -->
+<h1> 위치 </h1>
+  <section>
+    <div id="map" style="width:1600px;height:350px;"></div>
+
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=46338b24049a06146c3d1e288e43e1f2"></script>
+    <script>
+      var mapContainer = document.getElementById('map'), 
+          mapOption = {
+              center: new kakao.maps.LatLng(36.839285, 127.185902), 
+              level: 6, // 지도의 확대 레벨
+              mapTypeId : kakao.maps.MapTypeId.ROADMAP
+          }; 
+  
+      var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+      var marker = new kakao.maps.Marker({
+		    position: new kakao.maps.LatLng(36.839285, 127.185902), 
+		    map: map 
+      });
+
+      var mapContainer = document.getElementById('map'), 
+    mapOption = { 
+        center: new kakao.maps.LatLng(36.839285, 127.185902), 
+        level: 3 
+    };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
+    var position =  new kakao.maps.LatLng(36.839285, 127.185902);
+    var marker = new kakao.maps.Marker({
+      position: position
+    });
+
+    marker.setMap(map);
+
+    var iwContent = '<div style="padding:5px;">백석대학교</div>'; 
+    var infowindow = new kakao.maps.InfoWindow({
+        content : iwContent
+    });
+
+
+    kakao.maps.event.addListener(marker, 'mouseover', function() {
+
+        infowindow.open(map, marker);
+    });
+
+    kakao.maps.event.addListener(marker, 'mouseout', function() {
+        infowindow.close();
+    });
+
+    </script>
+  </section>
+  
+<!-- MORE -->
+  <section class="more">
+    <div class="bg-left"></div> <!--나중에 반전된색상을 나눌예정-->
+    <div class="bg-right"></div>
+    <div class="inner">
+
+      <div class="btn-group">
+        <div class="btn sign-up">회원가입</div>
+        <div class="btn sign-in">로그인</div>
+        <!-- 카카오 로그인창 -->
+        <a class = "btn cyber" href="javascript:kakaoLogin();"><img src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png" style="height : 50px; width:40;" alt=""></a>
+      </div>
+
+
+
+      <script src="https://developers.kakao.com/sdk/js/kakao.js"> </script>
+      <script>
+      window.Kakao.init("b0944b7b20d4aa5d558353a5cd5bbec4");
+  
+      function kakaoLogin() {
+          window.Kakao.Auth.login({
+              scope:'profile, account_email, gender, birthday',
+              success:function(authObj){
+                  console.log(authObj);
+                  window.Kakao.API.request({
+                      url:'/v2/user/me',
+                      success: res => {
+                          const kakao_account = res.kakao_account;
+                          console.log(kakao_account); 
+                      }
+                  });
+              
+              }
+          });
+      }
+      </script>
+
+
+
+
+
+    </div>
+  </section>
+
+  <!-- YOUTUBE  -->
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <div class="inner">
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">전화번호검색</a></li>
+        <li><a href="javascript:void(0)">정보통신운영규칙</a></li>
+        <li><a href="javascript:void(0)">정품소프트웨어사용안내</a></li>
+        <li><a href="javascript:void(0)">이메일수신거부</a></li>
+        <li><a href="javascript:void(0)">오류및불편사항신고</a></li>
+      </ul>
+
+      <div class="info">
+        <span>(31065) 충청남도 천안시 동남구 백석대학로 1</span>
+        <span>백석대학교</span>
+        <span>TEL : 041-550-91146</span>
+        <span>개인정보 책임자 : 최현준</span>
+      </div>
+
+      <p class="copyright"> 
+        &copy; <span class="this-year"> BAEKSEOK University</span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html> 
